@@ -1,0 +1,43 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SetCardCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {
+            ACTIONS = {
+                debug = id; 
+                debugFindSet = id; 
+                setDvorak = id; 
+                setQwerty = id; 
+                toggleDvQw = id; 
+            }; 
+            CLASS = SetMatrix; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSMatrix; 
+        }, 
+        {
+            ACTIONS = {resetScores = id; }; 
+            CLASS = SetScoreboard; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {setMenu = NSMenu; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = SetScoreboardView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                deal = id; 
+                dealMoreAnyway = id; 
+                debug = id; 
+                debugAutoplay = id; 
+                debugPretendSet = id; 
+                evaluate = id; 
+                newgame = id; 
+                noSet = id; 
+            }; 
+            CLASS = SetWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {field = SetMatrix; noSetButton = NSButton; scoreboard = SetScoreboard; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
