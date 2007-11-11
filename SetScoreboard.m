@@ -104,7 +104,7 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	unsigned int numTeams = [self numTeams];
 	NSMutableArray *teamsPrefs = [NSMutableArray arrayWithCapacity: numTeams];
-	int i;
+	unsigned int i;
 	
 	for (i = 0; i < numTeams; i++) {
 		SetTeam *team = teamByNumber(i);

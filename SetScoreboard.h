@@ -36,6 +36,10 @@
 - (void) loadPrefs;
 - (void) savePrefs;
 
+- (void) loadUserPrefs;
+- (void) saveUserPrefs;
+
+
 - (NSString *) teamName: (int) num;
 - (signed int) teamNumber: (NSString *) name;
 
@@ -71,6 +75,5 @@
 - (void) setPoints: (int) points forEvent: (NSString *) eventId;
 
 - (void) drawRect: (NSRect) rect;
-
 
 @end

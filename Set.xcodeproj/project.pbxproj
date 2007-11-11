@@ -12,6 +12,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CE064D890CE75DE300033CA9 /* SetTeam.h in Headers */ = {isa = PBXBuildFile; fileRef = CE064D870CE75DE300033CA9 /* SetTeam.h */; };
+		CE064D8A0CE75DE300033CA9 /* SetTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CE064D880CE75DE300033CA9 /* SetTeam.m */; };
 		CE1A0A4707F7BEB30003CE71 /* SetEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1A0A4607F7BEB30003CE71 /* SetEnums.h */; };
 		CE1A0A5107F7BECB0003CE71 /* SetFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1A0A4F07F7BECB0003CE71 /* SetFunctions.h */; };
 		CE1A0A5207F7BECB0003CE71 /* SetFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A0A5007F7BECB0003CE71 /* SetFunctions.m */; };
@@ -30,8 +32,6 @@
 		CE490E1C07FB9ADC00F4B63C /* SetPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE490E1A07FB9ADC00F4B63C /* SetPrefsWindowController.m */; };
 		CE490E2507FB9CA900F4B63C /* SetDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = CE490E2307FB9CA900F4B63C /* SetDefaults.h */; };
 		CE490E2607FB9CA900F4B63C /* SetDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CE490E2407FB9CA900F4B63C /* SetDefaults.m */; };
-		CE4A07300B81504700B6F0B9 /* SetTeam.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A072E0B81504700B6F0B9 /* SetTeam.h */; };
-		CE4A07310B81504700B6F0B9 /* SetTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A072F0B81504700B6F0B9 /* SetTeam.m */; };
 		CE5A3B7207FBD4D800BC47B0 /* SetPrefsWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = CE5A3B7107FBD4D800BC47B0 /* SetPrefsWindow.nib */; };
 		CE7F071B07FA81FD009C198C /* cardBack.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CE7F071A07FA81FD009C198C /* cardBack.tiff */; };
 		CECBAE2107F8ABC400A8B227 /* SetMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = CECBAE1F07F8ABC400A8B227 /* SetMatrix.h */; };
@@ -67,6 +67,8 @@
 		32CA4F630368D1EE00C91783 /* Set_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Set_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Set.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE064D870CE75DE300033CA9 /* SetTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTeam.h; sourceTree = "<group>"; };
+		CE064D880CE75DE300033CA9 /* SetTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTeam.m; sourceTree = "<group>"; };
 		CE1A0A4607F7BEB30003CE71 /* SetEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetEnums.h; sourceTree = "<group>"; };
 		CE1A0A4F07F7BECB0003CE71 /* SetFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFunctions.h; sourceTree = "<group>"; };
 		CE1A0A5007F7BECB0003CE71 /* SetFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetFunctions.m; sourceTree = "<group>"; };
@@ -85,8 +87,6 @@
 		CE490E1A07FB9ADC00F4B63C /* SetPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPrefsWindowController.m; sourceTree = "<group>"; };
 		CE490E2307FB9CA900F4B63C /* SetDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDefaults.h; sourceTree = "<group>"; };
 		CE490E2407FB9CA900F4B63C /* SetDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDefaults.m; sourceTree = "<group>"; };
-		CE4A072E0B81504700B6F0B9 /* SetTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTeam.h; sourceTree = "<group>"; };
-		CE4A072F0B81504700B6F0B9 /* SetTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTeam.m; sourceTree = "<group>"; };
 		CE5A3B6D07FBD4C500BC47B0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SetPrefsWindow.nib; sourceTree = "<group>"; };
 		CE7F071A07FA81FD009C198C /* cardBack.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cardBack.tiff; sourceTree = "<group>"; };
 		CECBAE1F07F8ABC400A8B227 /* SetMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetMatrix.h; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				CE1A0A9707F7DBBE0003CE71 /* SetScoreboard.m */,
 				CE1AC89107F75D9100B6904B /* SetWindowController.h */,
 				CE1AC89207F75D9100B6904B /* SetWindowController.m */,
-				CE4A072E0B81504700B6F0B9 /* SetTeam.h */,
-				CE4A072F0B81504700B6F0B9 /* SetTeam.m */,
+				CE064D870CE75DE300033CA9 /* SetTeam.h */,
+				CE064D880CE75DE300033CA9 /* SetTeam.m */,
 			);
 			name = "Core Classes";
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 				CECBB1DB07FA02A200A8B227 /* dbSharedPersistentObject.h in Headers */,
 				CE490E1B07FB9ADC00F4B63C /* SetPrefsWindowController.h in Headers */,
 				CE490E2507FB9CA900F4B63C /* SetDefaults.h in Headers */,
-				CE4A07300B81504700B6F0B9 /* SetTeam.h in Headers */,
+				CE064D890CE75DE300033CA9 /* SetTeam.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +346,7 @@
 				CECBB1DC07FA02A200A8B227 /* dbSharedPersistentObject.m in Sources */,
 				CE490E1C07FB9ADC00F4B63C /* SetPrefsWindowController.m in Sources */,
 				CE490E2607FB9CA900F4B63C /* SetDefaults.m in Sources */,
-				CE4A07310B81504700B6F0B9 /* SetTeam.m in Sources */,
+				CE064D8A0CE75DE300033CA9 /* SetTeam.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
