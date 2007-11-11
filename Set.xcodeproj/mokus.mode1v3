@@ -195,81 +195,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>CE064D8D0CE75EDE00033CA9</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>SetTeam.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>CE064DA20CE763F000033CA9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>SetTeam.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>CE064DAC0CE763F000033CA9</string>
-						<key>history</key>
-						<array>
-							<string>CE064DA30CE763F000033CA9</string>
-							<string>CE064DA40CE763F000033CA9</string>
-							<string>CE064DA50CE763F000033CA9</string>
-							<string>CE064DA60CE763F000033CA9</string>
-						</array>
-						<key>prevStack</key>
-						<array>
-							<string>CE064DA70CE763F000033CA9</string>
-							<string>CE064DA80CE763F000033CA9</string>
-							<string>CE064DA90CE763F000033CA9</string>
-							<string>CE064DAA0CE763F000033CA9</string>
-							<string>CE064DAB0CE763F000033CA9</string>
-						</array>
-					</dict>
-					<key>Split1</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>CE064DAD0CE763F000033CA9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>SetTeam.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>CE064DB20CE763F000033CA9</string>
-						<key>history</key>
-						<array>
-							<string>CE064DAE0CE763F000033CA9</string>
-							<string>CE064DAF0CE763F000033CA9</string>
-							<string>CE064D9B0CE763CA00033CA9</string>
-						</array>
-						<key>prevStack</key>
-						<array>
-							<string>CE064DB00CE763F000033CA9</string>
-							<string>CE064DB10CE763F000033CA9</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>2</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {965, 837}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 55 965 878 0 0 1440 938 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -353,7 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>12</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -574,7 +500,7 @@
 	<key>PerspectivesBarVisible</key>
 	<false/>
 	<key>PinnedNavigatorIdentifier</key>
-	<string>CE064D8D0CE75EDE00033CA9</string>
+	<string>CE064DC70CE7640300033CA9</string>
 	<key>ShelfIsVisible</key>
 	<false/>
 	<key>StatusbarIsVisible</key>
@@ -595,11 +521,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>CE064DCB0CE767A100033CA9</string>
+		<string>CE064DCC0CE767A100033CA9</string>
+		<string>CE064DCD0CE767A100033CA9</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/mokus/Desktop/Set/Set.xcodeproj</string>
-		<string>CE064D8D0CE75EDE00033CA9</string>
 		<string>CE064DB30CE763F000033CA9</string>
+		<string>/Users/mokus/Desktop/Set/Set.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>1063 132 343 796 0 0 1440 938 </string>
@@ -618,8 +546,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -642,6 +568,8 @@
 							<string>615pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -692,7 +620,7 @@
 			<key>WindowToolGUID</key>
 			<string>CE064DB30CE763F000033CA9</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
