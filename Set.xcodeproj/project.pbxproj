@@ -115,20 +115,9 @@
 		080E96DDFE201D6D7F000001 /* Core Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE1AC86807F753C000B6904B /* SetCard.h */,
-				CE1AC86907F753C000B6904B /* SetCard.m */,
-				CE1AC88607F759E200B6904B /* SetCardCell.h */,
-				CE1AC88707F759E200B6904B /* SetCardCell.m */,
-				CE1AC7CC07F7244000B6904B /* SetDeck.h */,
-				CE1AC7CD07F7244000B6904B /* SetDeck.m */,
-				CECBAE1F07F8ABC400A8B227 /* SetMatrix.h */,
-				CECBAE2007F8ABC400A8B227 /* SetMatrix.m */,
-				CE1A0A9607F7DBBE0003CE71 /* SetScoreboard.h */,
-				CE1A0A9707F7DBBE0003CE71 /* SetScoreboard.m */,
-				CE1AC89107F75D9100B6904B /* SetWindowController.h */,
-				CE1AC89207F75D9100B6904B /* SetWindowController.m */,
-				CE064D870CE75DE300033CA9 /* SetTeam.h */,
-				CE064D880CE75DE300033CA9 /* SetTeam.m */,
+				CEAE72D00CF78A0A00F022E1 /* Game Logic */,
+				CEAE72CD0CF789FC00F022E1 /* UI Controllers */,
+				CEAE72D10CF78A1400F022E1 /* UI Views */,
 			);
 			name = "Core Classes";
 			sourceTree = "<group>";
@@ -217,6 +206,41 @@
 				CE490E2407FB9CA900F4B63C /* SetDefaults.m */,
 			);
 			name = Preferences;
+			sourceTree = "<group>";
+		};
+		CEAE72CD0CF789FC00F022E1 /* UI Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AC89107F75D9100B6904B /* SetWindowController.h */,
+				CE1AC89207F75D9100B6904B /* SetWindowController.m */,
+			);
+			name = "UI Controllers";
+			sourceTree = "<group>";
+		};
+		CEAE72D00CF78A0A00F022E1 /* Game Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CE1AC86807F753C000B6904B /* SetCard.h */,
+				CE1AC86907F753C000B6904B /* SetCard.m */,
+				CE1AC7CC07F7244000B6904B /* SetDeck.h */,
+				CE1AC7CD07F7244000B6904B /* SetDeck.m */,
+				CE064D870CE75DE300033CA9 /* SetTeam.h */,
+				CE064D880CE75DE300033CA9 /* SetTeam.m */,
+				CE1A0A9607F7DBBE0003CE71 /* SetScoreboard.h */,
+				CE1A0A9707F7DBBE0003CE71 /* SetScoreboard.m */,
+			);
+			name = "Game Logic";
+			sourceTree = "<group>";
+		};
+		CEAE72D10CF78A1400F022E1 /* UI Views */ = {
+			isa = PBXGroup;
+			children = (
+				CECBAE1F07F8ABC400A8B227 /* SetMatrix.h */,
+				CECBAE2007F8ABC400A8B227 /* SetMatrix.m */,
+				CE1AC88607F759E200B6904B /* SetCardCell.h */,
+				CE1AC88707F759E200B6904B /* SetCardCell.m */,
+			);
+			name = "UI Views";
 			sourceTree = "<group>";
 		};
 		CECBB14C07FA011900A8B227 /* Private Frameworks */ = {
