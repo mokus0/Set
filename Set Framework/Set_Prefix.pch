@@ -2,6 +2,47 @@
 // Prefix header for all source files of the 'Set' target in the 'Set' project.
 //
 
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
+/***************
+ *  Convenient macros - kinda ugly...
+ ***/
+     
+    /*
+     * 	isClass(obj, cls)
+     *    returns true if object 'obj' is of class 'cls' (or is of a class derived
+     *  from 'cls').  Caches the class, so don't use this if for some reason you're
+     *  testing against a dynamically chosen class.
+     */
+#define isClass(obj, cls)	({static Class theClass = nil; [obj isKindOfClass: (theClass ? theClass : (theClass = [cls class]))]; })
+
+    /*
+     *	ifClass(obj, cls)
+     *    Executes subsequent statement or block if object 'obj' is non-nil and is
+     *  of class 'cls' (or a class derived from 'cls'.  Caches the class.
+     */
+#define ifClass(obj, cls)	if (obj && isClass(obj, cls))
+
+    /*
+     *	ifMember(obj, cls)
+     *    Executes subsequent statement or block if object 'obj' is non-nil and is
+     *  of class 'cls' (and not of a class derived from 'cls').  Caches the class.
+     */
+#define ifMember(obj, cls)	if (obj && (obj->isa == ({static Class theClass = nil; theClass ? theClass : (theClass = [cls class]); })))
+
+    /*
+     *	ifProto(obj, proto)
+     *    Executes subsequent statement or block if object 'obj' is non-nil and is
+     *  of a class that implements the protocol 'proto'.  Caches the protocol.
+     */
+#define ifProto(obj, proto)	if (obj && ({static Protocol * theProto = nil; [obj conformsToProtocol: theProto ? theProto : (theProto = @protocol(proto))]; }))
+
+	/*
+	 *  unless(condition)
+	 *    Exactly the opposite of "if(condition)"
+	 */
+#define unless(condition)   if(! (condition))
+
+	/*
+	 *  until(condition)
+	 *    Exactly the opposite of "while(condition)"
+	 */
+#define until(condition)   while(! (condition))

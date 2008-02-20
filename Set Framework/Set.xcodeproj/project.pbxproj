@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		CE67E7B60D6BD29B00ADEA7D /* SetCard.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B40D6BD29B00ADEA7D /* SetCard.h */; };
+		CE67E7B70D6BD29B00ADEA7D /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7B50D6BD29B00ADEA7D /* SetCard.m */; };
+		CE67E7BA0D6BD2AB00ADEA7D /* SetCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B80D6BD2AB00ADEA7D /* SetCardCell.h */; };
+		CE67E7BB0D6BD2AB00ADEA7D /* SetCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7B90D6BD2AB00ADEA7D /* SetCardCell.m */; };
+		CE67E7C00D6BD2B700ADEA7D /* SetConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BC0D6BD2B700ADEA7D /* SetConstants.h */; };
+		CE67E7C10D6BD2B700ADEA7D /* SetEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BD0D6BD2B700ADEA7D /* SetEnums.h */; };
+		CE67E7C20D6BD2B700ADEA7D /* SetFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BE0D6BD2B700ADEA7D /* SetFunctions.h */; };
+		CE67E7C30D6BD2B700ADEA7D /* SetFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7BF0D6BD2B700ADEA7D /* SetFunctions.m */; };
+		CE67E7CA0D6BD2F900ADEA7D /* SetDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */; };
+		CE67E7CB0D6BD2F900ADEA7D /* SetDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7C90D6BD2F900ADEA7D /* SetDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		32DBCF5E0370ADEE00C91783 /* Set_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Set_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Set.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Set.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE67E7B40D6BD29B00ADEA7D /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCard.h; sourceTree = "<group>"; };
+		CE67E7B50D6BD29B00ADEA7D /* SetCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCard.m; sourceTree = "<group>"; };
+		CE67E7B80D6BD2AB00ADEA7D /* SetCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCardCell.h; sourceTree = "<group>"; };
+		CE67E7B90D6BD2AB00ADEA7D /* SetCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCardCell.m; sourceTree = "<group>"; };
+		CE67E7BC0D6BD2B700ADEA7D /* SetConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetConstants.h; sourceTree = "<group>"; };
+		CE67E7BD0D6BD2B700ADEA7D /* SetEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetEnums.h; sourceTree = "<group>"; };
+		CE67E7BE0D6BD2B700ADEA7D /* SetFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFunctions.h; sourceTree = "<group>"; };
+		CE67E7BF0D6BD2B700ADEA7D /* SetFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetFunctions.m; sourceTree = "<group>"; };
+		CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDefaults.h; sourceTree = "<group>"; };
+		CE67E7C90D6BD2F900ADEA7D /* SetDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDefaults.m; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +95,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE67E7B80D6BD2AB00ADEA7D /* SetCardCell.h */,
+				CE67E7B90D6BD2AB00ADEA7D /* SetCardCell.m */,
+				CE67E7B40D6BD29B00ADEA7D /* SetCard.h */,
+				CE67E7B50D6BD29B00ADEA7D /* SetCard.m */,
+				CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */,
+				CE67E7C90D6BD2F900ADEA7D /* SetDefaults.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -101,6 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				32DBCF5E0370ADEE00C91783 /* Set_Prefix.pch */,
+				CE67E7BC0D6BD2B700ADEA7D /* SetConstants.h */,
+				CE67E7BD0D6BD2B700ADEA7D /* SetEnums.h */,
+				CE67E7BE0D6BD2B700ADEA7D /* SetFunctions.h */,
+				CE67E7BF0D6BD2B700ADEA7D /* SetFunctions.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -112,6 +142,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE67E7B60D6BD29B00ADEA7D /* SetCard.h in Headers */,
+				CE67E7BA0D6BD2AB00ADEA7D /* SetCardCell.h in Headers */,
+				CE67E7C00D6BD2B700ADEA7D /* SetConstants.h in Headers */,
+				CE67E7C10D6BD2B700ADEA7D /* SetEnums.h in Headers */,
+				CE67E7C20D6BD2B700ADEA7D /* SetFunctions.h in Headers */,
+				CE67E7CA0D6BD2F900ADEA7D /* SetDefaults.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE67E7B70D6BD29B00ADEA7D /* SetCard.m in Sources */,
+				CE67E7BB0D6BD2AB00ADEA7D /* SetCardCell.m in Sources */,
+				CE67E7C30D6BD2B700ADEA7D /* SetFunctions.m in Sources */,
+				CE67E7CB0D6BD2F900ADEA7D /* SetDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
