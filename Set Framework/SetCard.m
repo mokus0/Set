@@ -31,6 +31,10 @@ NSString *FillDescriptions[SetCardsPerSet] = {
 
 
 	/* .-========= Local Data =========-. */
+static NSColor *cardBackColor = nil;
+static NSImage *cardBack = nil;
+static NSSize cardBackSize = {0.0, 0.0};
+
 static NSBezierPath *path = nil;
 
 static NSColor *_color[SetCardsPerSet][SetCardsPerSet] = {{nil}};
@@ -72,7 +76,24 @@ static void drawSquiggle(NSRect rect);
 	/* .-==== Class Implementation ====-. */
 @implementation SetCard
 
-+ (void) initialize {
++ (void)initialize {
+	NSBundle *mainBundle = [NSBundle bundleForClass: self];
+	NSString *cardBackPath = [mainBundle pathForResource: @"cardBack" ofType: @"tiff"];
+	
+	if (cardBackPath)
+		cardBack = [[NSImage alloc] initWithContentsOfFile: cardBackPath];
+	else
+		NSLog(@"SetCardCell: Failed to locate card back image");
+	
+	[cardBack setScalesWhenResized: TRUE];
+	[cardBack setFlipped: TRUE];
+	
+	cardBackSize = [cardBack size];
+	
+	cardBackColor = [NSColor colorWithCalibratedHue: (280.0 / 360) saturation: 1.0 brightness: (60.0/100) alpha: 1.0];
+	[cardBackColor retain];
+	
+	/* the bezier-path worker bee */
 	path = [[NSBezierPath alloc] init];
 	
 		// in case somebody stuffs something stupid in the defaults
@@ -150,6 +171,21 @@ static void drawSquiggle(NSRect rect);
 	}
 }
 
++ (void) drawCardBackWithFrame: (NSRect) frame {
+	NSRect imgSrc = NSMakeRect(0, 0, cardBackSize.width, cardBackSize.height);
+	NSRect imgDst = NSInsetRect(frame, 2.0, 2.0);
+	
+	imgSrc = proportionalRectToRect(imgSrc, imgDst);
+	[cardBackColor set];
+	[NSBezierPath fillRect: imgDst];
+	
+	[cardBack drawInRect:	imgDst
+			fromRect:   imgSrc
+			operation:  NSCompositeCopy
+			fraction:   1.0
+		];
+}
+
 + (SetCard *) deckFirstCard {
 	return [[self alloc] init];
 }
@@ -205,6 +241,11 @@ static void drawSquiggle(NSRect rect);
 	}
 	return self;
 }
+
+- (id) copyWithZone: (NSZone *) zone {
+	return self;
+}
+
 
 - (BOOL) isEqual: (id) other {
 	ifClass (other, SetCard) {
@@ -423,3 +464,4 @@ void drawSquiggle(NSRect frame) {
 	
 	[path closePath];
 }
+

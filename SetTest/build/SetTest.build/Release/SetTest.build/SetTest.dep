@@ -1,0 +1,13 @@
+15a02cbb2d002f9dde7e9e8be76178ee f36b5691b14d99b48ad11439a6be4933 ffffffffffffffffffffffffffffffff 102 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app
+00000000000000000000000000000000 615972c3b7b348782b72a945996b691d ffffffffffffffffffffffffffffffff 136 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/Resources/English.lproj/MainMenu.nib
+00000000418ab3dc00000000000009ed dffdb6644607221b385f6d94c21805d0 ffffffffffffffffffffffffffffffff 4844 /Users/mokus/Projects/Set/SetTest/build/SetTest.build/Release/SetTest.build/Objects-normal/i386/main.o
+00000000418ab3dc00000000000009ed 0356432c2a651dc85788a28de7fcbd6d ffffffffffffffffffffffffffffffff 5068 /Users/mokus/Projects/Set/SetTest/build/SetTest.build/Release/SetTest.build/Objects-normal/ppc/main.o
+c6351ef97b4be71414bcde08e45b4a05 57191c4099199e337848da96a927678d ffffffffffffffffffffffffffffffff 102 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app.dSYM
+77f1b455f68c2bd4d8eb29645f69e585 b1c4aaac8dc7ccc0cc57f76cbb32af80 ffffffffffffffffffffffffffffffff 37392 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/MacOS/SetTest
+dffdb664061e8a5d385f6d94c213929e 3112495edbf73ea17dcf284451460bc4 ffffffffffffffffffffffffffffffff 16912 /Users/mokus/Projects/Set/SetTest/build/SetTest.build/Release/SetTest.build/Objects-normal/i386/SetTest
+0356432c6a7cb58e5788a28de7f72a22 9a48084341192aa6caf3ce392bcb56fd ffffffffffffffffffffffffffffffff 12824 /Users/mokus/Projects/Set/SetTest/build/SetTest.build/Release/SetTest.build/Objects-normal/ppc/SetTest
+00000000000000000000000000000000 847f039df87e1aba2c9f33ab22a38470 ffffffffffffffffffffffffffffffff 384 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/Resources/SetTestController.rb
+00000000000000000000000000000000 2ccc8ad617bc0935195739b6f82c2a6d ffffffffffffffffffffffffffffffff 484 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/Resources/rb_main.rb
+00000000000000000000000000000000 1a7fc9ca0e3a937ed478e3db40def5eb ffffffffffffffffffffffffffffffff 436 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/Resources/English.lproj/InfoPlist.strings
+0000000047bcafb1000000000000034b 0e735ccf10cc0a0153a9c4e4de0bb5c2 ffffffffffffffffffffffffffffffff 8 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/PkgInfo
+0000000047bcafb1000000000000034b 0e735ccf10cc0a0153a9c4e4de0bb5c2 ffffffffffffffffffffffffffffffff 786 /Users/mokus/Projects/Set/SetTest/build/Release/SetTest.app/Contents/Info.plist

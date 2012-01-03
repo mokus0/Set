@@ -1,0 +1,39 @@
+/Users/mokus/Projects/RubySet/SetCardCell.m: In function ‘-[SetCardCell initImageCell:]’:
+/Users/mokus/Projects/RubySet/SetCardCell.m:40: warning: ‘NSObject’ may not respond to ‘-initImageCell:’
+/Users/mokus/Projects/RubySet/SetCardCell.m:40: warning: (Messages without a matching method signature
+/Users/mokus/Projects/RubySet/SetCardCell.m:40: warning: will be assumed to return ‘id’ and accept
+/Users/mokus/Projects/RubySet/SetCardCell.m:40: warning: ‘...’ as arguments.)
+/Users/mokus/Projects/RubySet/SetCardCell.m:42: error: ‘card’ undeclared (first use in this function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:42: error: (Each undeclared identifier is reported only once
+/Users/mokus/Projects/RubySet/SetCardCell.m:42: error: for each function it appears in.)
+/Users/mokus/Projects/RubySet/SetCardCell.m: At top level:
+/Users/mokus/Projects/RubySet/SetCardCell.m:50: error: syntax error before ‘SetCard’
+/Users/mokus/Projects/RubySet/SetCardCell.m: In function ‘-[SetCardCell awakeFromNib]’:
+/Users/mokus/Projects/RubySet/SetCardCell.m:59: error: ‘card’ undeclared (first use in this function)
+/Users/mokus/Projects/RubySet/SetCardCell.m: At top level:
+/Users/mokus/Projects/RubySet/SetCardCell.m:63: error: syntax error before ‘SetCard’
+/Users/mokus/Projects/RubySet/SetCardCell.m:65: error: ‘newCard’ undeclared here (not in a function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:65: warning: data definition has no type or storage class
+/Users/mokus/Projects/RubySet/SetCardCell.m:66: error: syntax error before ‘}’ token
+/Users/mokus/Projects/RubySet/SetCardCell.m:68: error: syntax error before ‘SetCard’
+/Users/mokus/Projects/RubySet/SetCardCell.m:75: error: syntax error before ‘SetCard’
+/Users/mokus/Projects/RubySet/SetCardCell.m:79: error: syntax error before ‘SetMatrix’
+/Users/mokus/Projects/RubySet/SetCardCell.m:81: error: ‘_row’ undeclared here (not in a function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:81: warning: data definition has no type or storage class
+/Users/mokus/Projects/RubySet/SetCardCell.m:82: error: ‘_col’ undeclared here (not in a function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:82: warning: data definition has no type or storage class
+/Users/mokus/Projects/RubySet/SetCardCell.m:83: error: syntax error before ‘}’ token
+/Users/mokus/Projects/RubySet/SetCardCell.m: In function ‘-[SetCardCell setState:]’:
+/Users/mokus/Projects/RubySet/SetCardCell.m:91: error: ‘field’ undeclared (first use in this function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:95: warning: ‘NSObject’ may not respond to ‘-setState:’
+/Users/mokus/Projects/RubySet/SetCardCell.m: In function ‘-[SetCardCell drawInteriorWithFrame:inView:]’:
+/Users/mokus/Projects/RubySet/SetCardCell.m:100: warning: comparison between pointer and integer
+/Users/mokus/Projects/RubySet/SetCardCell.m:101: warning: ‘SetCardCell’ may not respond to ‘-drawCardBackWithFrame:’
+/Users/mokus/Projects/RubySet/SetCardCell.m:103: error: ‘SetShapeInsetW’ undeclared (first use in this function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:104: error: ‘SetShapeInsetH’ undeclared (first use in this function)
+/Users/mokus/Projects/RubySet/SetCardCell.m:108: warning: invalid receiver type ‘int’
+/Users/mokus/Projects/RubySet/SetCardCell.m:108: warning: multiple methods named ‘-drawInRect:’ found
+/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSImageRep.h:43: warning: using ‘-(BOOL)drawInRect:(NSRect)rect’
+/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSStringDrawing.h:24: warning: also found ‘-(void)drawInRect:(NSRect)rect’
+/Users/mokus/Projects/RubySet/SetCardCell.m: In function ‘-[SetCardCell drawCardBackWithFrame:]’:
+/Users/mokus/Projects/RubySet/SetCardCell.m:116: error: incompatible types in assignment

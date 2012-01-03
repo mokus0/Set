@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
-		CE67E7B60D6BD29B00ADEA7D /* SetCard.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B40D6BD29B00ADEA7D /* SetCard.h */; };
+		CE67E7B60D6BD29B00ADEA7D /* SetCard.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B40D6BD29B00ADEA7D /* SetCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE67E7B70D6BD29B00ADEA7D /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7B50D6BD29B00ADEA7D /* SetCard.m */; };
-		CE67E7BA0D6BD2AB00ADEA7D /* SetCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B80D6BD2AB00ADEA7D /* SetCardCell.h */; };
+		CE67E7BA0D6BD2AB00ADEA7D /* SetCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7B80D6BD2AB00ADEA7D /* SetCardCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE67E7BB0D6BD2AB00ADEA7D /* SetCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7B90D6BD2AB00ADEA7D /* SetCardCell.m */; };
-		CE67E7C00D6BD2B700ADEA7D /* SetConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BC0D6BD2B700ADEA7D /* SetConstants.h */; };
-		CE67E7C10D6BD2B700ADEA7D /* SetEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BD0D6BD2B700ADEA7D /* SetEnums.h */; };
-		CE67E7C20D6BD2B700ADEA7D /* SetFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BE0D6BD2B700ADEA7D /* SetFunctions.h */; };
+		CE67E7C00D6BD2B700ADEA7D /* SetConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BC0D6BD2B700ADEA7D /* SetConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE67E7C10D6BD2B700ADEA7D /* SetEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BD0D6BD2B700ADEA7D /* SetEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE67E7C20D6BD2B700ADEA7D /* SetFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7BE0D6BD2B700ADEA7D /* SetFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE67E7C30D6BD2B700ADEA7D /* SetFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7BF0D6BD2B700ADEA7D /* SetFunctions.m */; };
-		CE67E7CA0D6BD2F900ADEA7D /* SetDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */; };
+		CE67E7CA0D6BD2F900ADEA7D /* SetDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE67E7CB0D6BD2F900ADEA7D /* SetDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67E7C90D6BD2F900ADEA7D /* SetDefaults.m */; };
+		CE99A2570D6CF169007ECB31 /* cardBack.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CE99A2560D6CF169007ECB31 /* cardBack.tiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		CE67E7BF0D6BD2B700ADEA7D /* SetFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetFunctions.m; sourceTree = "<group>"; };
 		CE67E7C80D6BD2F900ADEA7D /* SetDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDefaults.h; sourceTree = "<group>"; };
 		CE67E7C90D6BD2F900ADEA7D /* SetDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDefaults.m; sourceTree = "<group>"; };
+		CE99A2560D6CF169007ECB31 /* cardBack.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = cardBack.tiff; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		089C1665FE841158C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE99A2560D6CF169007ECB31 /* cardBack.tiff */,
 				8DC2EF5A0486A6940098B216 /* Info.plist */,
 				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
 			);
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				CE99A2570D6CF169007ECB31 /* cardBack.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
