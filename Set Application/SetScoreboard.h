@@ -11,17 +11,14 @@
 @class SetTeam;
 
 @interface SetScoreboard : NSView <NSTableViewDataSource> {
-	
+	NSUserDefaults* defaults;
+    
 		/* array of SetTeam objects in their "presentation order" */
 	NSMutableArray *teams;
 	
 		/* the same objects, indexed by useful data */
 	NSMutableDictionary *teamsByName;
 	NSMutableDictionary *teamsByKey;
-	
-	
-		/* points awarded for various events */
-	NSMutableDictionary *eventPoints;
 	
 		/* text formatting data */
 	NSMutableDictionary *teamNameAttributes;
@@ -69,10 +66,6 @@
 - (BOOL) dropTeam: (NSString *) name;
 - (BOOL) dropTeamNum: (NSUInteger) num;
 - (BOOL) renameTeam: (NSUInteger) team to: (NSString *) name;
-
-
-- (NSInteger) pointsForEvent: (NSString *) eventId;
-- (void) setPoints: (NSInteger) points forEvent: (NSString *) eventId;
 
 - (void) drawRect: (NSRect) rect;
 

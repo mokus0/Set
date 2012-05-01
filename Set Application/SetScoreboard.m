@@ -21,24 +21,16 @@
 #define		teamByNumber(team)		([teams objectAtIndex: team])
 #define		teamByName(team)		([teamsByName objectForKey: team])
 #define		teamByKey(team)			([teamsByKey objectForKey: team])
-#define		eventValue(event)		({ NSNumber *__val = [eventPoints objectForKey: event]; __val ? [__val intValue] : 0; })
-
 
 	/* .-==== Class Implementation ====-. */
 @implementation SetScoreboard
 
 - (void) awakeFromNib {
+    defaults = [NSUserDefaults standardUserDefaults];
+    
 	teams = [[NSMutableArray alloc] init];
 	teamsByName = [[NSMutableDictionary alloc] init];
 	teamsByKey = [[NSMutableDictionary alloc] init];
-	
-	eventPoints = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-			[NSNumber numberWithInt: SetCardsPerSet] , @"Set.Good",
-			[NSNumber numberWithInt: -(SetCardsPerSet + 1)] , @"Set.Bad",
-			[NSNumber numberWithInt: SetCardsPerSet] , @"NoSet.Good",
-			[NSNumber numberWithInt: 0] , @"NoSet.Bad",
-			nil
-		];
 	
 	[self initOutputAttributes];
 	
@@ -78,7 +70,6 @@
 }
 
 - (void) loadUserPrefs {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSArray *teamsPrefs = [defaults arrayForKey: SetPrefs_teams];
 	
 	NSEnumerator *teamEnum = [teamsPrefs objectEnumerator];
@@ -101,7 +92,6 @@
 }
 
 - (void) saveUserPrefs {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	unsigned int numTeams = [self numTeams];
 	NSMutableArray *teamsPrefs = [NSMutableArray arrayWithCapacity: numTeams];
 	unsigned int i;
@@ -160,12 +150,18 @@
 	}
 }
 
+- (NSInteger) eventValue: (NSString *) event {
+    NSDictionary *scoring = [defaults dictionaryForKey: SetPrefs_scoring];
+    NSNumber *value = [scoring objectForKey: event];
+    return (value ? [value intValue] : 0);
+}
+
 - (void) event: (NSString *) event forTeam: (NSString *) team {
-	[self score: eventValue(event) forTeam: team];
+	[self score: [self eventValue: event] forTeam: team];
 }
 
 - (void) event: (NSString *) event forTeamNum: (NSUInteger) team {
-	[self score: eventValue(event) forTeam: [self teamName: team]];
+	[self score: [self eventValue: event] forTeam: [self teamName: team]];
 }
 
 - (NSInteger) scoreForTeam: (NSString *) name {
@@ -376,14 +372,6 @@
 	return FALSE;
 }
 
-
-- (NSInteger) pointsForEvent: (NSString *) eventId {
-	return eventValue(eventId);
-}
-
-- (void) setPoints: (NSInteger) points forEvent: (NSString *) eventId {
-	[eventPoints setObject: [NSNumber numberWithInt: points] forKey: eventId];
-}
 
 - (void)drawRect:(NSRect)rect {
 	NSAttributedString *text= [self scoreText];

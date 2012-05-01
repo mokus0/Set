@@ -107,12 +107,12 @@
 		NSString *teamName = [sender title];
 		
 		if ([field selectionIsSet]) {
-			[scoreboard event: @"Set.Good" forTeam: teamName];
+			[scoreboard event: SetPrefs_scoring_set forTeam: teamName];
 			
 			[field removeSelection];
 			[self normalizeField];
 		} else {
-			[scoreboard event: @"Set.Bad" forTeam: teamName];
+			[scoreboard event: SetPrefs_scoring_notASet forTeam: teamName];
 			
 			if (deselectOnBadSet)
 				[field deselectAllSetCardCells];
@@ -183,12 +183,12 @@
 		NSString *teamName = [sender title];
 		
 		if (TRUE /* [field selectionIsSet] */) {
-			[scoreboard event: @"Set.Good" forTeam: teamName];
+			[scoreboard event: SetPrefs_scoring_set forTeam: teamName];
 			
 			[field removeSelection];
 			[self normalizeField];
 		} else {
-			[scoreboard event: @"Set.Bad" forTeam: teamName];
+			[scoreboard event: SetPrefs_scoring_notASet forTeam: teamName];
 		}
 	}
 }
@@ -206,7 +206,7 @@
 		
 		unless ([field hasNoSets]) {
 			[field debugFindSet: sender];
-			[scoreboard event: @"Set.Good" forTeam: @"Car Ramrod"];
+			[scoreboard event: SetPrefs_scoring_set forTeam: @"Car Ramrod"];
 			
 			[field removeSelection];
 			[self normalizeField];
