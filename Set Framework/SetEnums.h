@@ -1,15 +1,6 @@
-/*
- *  SetEnums.h
- *  Set
- *
- *  Created by mokus on Sun Mar 27 2005.
- *  Copyright (c) 2005 James Cook. All rights reserved.
- *
- */
-
 #import "SetConstants.h"
 
-/* implemented in SetCard.h */
+/* implemented in SetCard.m */
 extern NSString *ShapeDescriptions[];
 extern NSString *ColorDescriptions[];
 extern NSString *NumberDescriptions[];

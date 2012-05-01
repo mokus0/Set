@@ -1,21 +1,9 @@
-//
-//  SetCardCell.m
-//  Set
-//
-//  Created by mokus on Sun Mar 27 2005.
-//  Copyright (c) 2005 James Cook. All rights reserved.
-//
-
-	/* .-====== Primary headers =======-. */
 #import "SetCardCell.h"
 
-	/* .-===== Secondary headers ======-. */
 #import "SetConstants.h"
 #import "SetFunctions.h"
 #import "SetCard.h"
 
-
-	/* .-==== Class Implementation ====-. */
 @implementation SetCardCell
 
 - (id) initImageCell: (NSImage *) img {

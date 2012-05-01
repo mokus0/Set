@@ -1,12 +1,3 @@
-/*
- *  SetConstants.h
- *  Set
- *
- *  Created by mokus on Tue Mar 29 2005.
- *  Copyright (c) 2005 James Cook. All rights reserved.
- *
- */
- 
 	/* Basic physics of the Set universe */
 	/* Note that changing SetCardsPerSet requires changes elsewhere */
 #define SetCardsPerSet			3

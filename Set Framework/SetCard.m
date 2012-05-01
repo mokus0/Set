@@ -1,12 +1,3 @@
-//
-//  SetCard.m
-//  Set
-//
-//  Created by mokus on Sun Mar 27 2005.
-//  Copyright (c) 2005-2008 James Cook. All rights reserved.
-//
-
-	/* .-====== Primary headers =======-. */
 #import <Cocoa/Cocoa.h>
 #import "SetCard.h"
 #import "SetDefaults.h"
