@@ -50,7 +50,7 @@
 - (IBAction)setPref:(id)sender {
 	
 	
-	NSLog(@"setPref: (tag = %d) %@", [sender tag], sender);
+	NSLog(@"setPref: (tag = %ld) %@", (long) [sender tag], sender);
 }
 
 

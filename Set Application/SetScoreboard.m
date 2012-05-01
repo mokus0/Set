@@ -129,7 +129,7 @@
 	return [teamByNumber(num) name];
 }
 
-- (signed int) teamNumber: (NSString *) name {
+- (NSUInteger) teamNumber: (NSString *) name {
 	SetTeam *team = teamByName(name);
 	
 	if (team)
@@ -138,7 +138,7 @@
 		return -1;
 }
 
-- (void) score: (int) points forTeam: (NSString *) name {
+- (void) score: (NSInteger) points forTeam: (NSString *) name {
 	SetTeam *team = teamByName(name);
 	
 	ifClass (team, SetTeam) {
@@ -149,7 +149,7 @@
 	}
 }
 
-- (void) score: (int) points forTeamNum: (unsigned int) num {
+- (void) score: (NSInteger) points forTeamNum: (NSUInteger) num {
 	SetTeam *team = teamByNumber(num);
 	
 	ifClass (team, SetTeam) {
@@ -164,11 +164,11 @@
 	[self score: eventValue(event) forTeam: team];
 }
 
-- (void) event: (NSString *) event forTeamNum: (unsigned int) team {
+- (void) event: (NSString *) event forTeamNum: (NSUInteger) team {
 	[self score: eventValue(event) forTeam: [self teamName: team]];
 }
 
-- (int) scoreForTeam: (NSString *) name {
+- (NSInteger) scoreForTeam: (NSString *) name {
 	SetTeam *team = teamByName(name);
 	
 	ifClass (team, SetTeam)
@@ -177,7 +177,7 @@
 	return 0;
 }
 
-- (int) scoreForTeamNum: (unsigned int) num {
+- (NSInteger) scoreForTeamNum: (NSUInteger) num {
 	SetTeam *team = teamByNumber(num);
 	
 	ifClass (team, SetTeam)
@@ -241,7 +241,7 @@
 	return [teamsByName allKeys];
 }
 
-- (unsigned int) numTeams {
+- (NSUInteger) numTeams {
 	return [teams count];
 }
 
@@ -326,7 +326,7 @@
 	return newTeam;
 }
 
-- (BOOL) dropTeamNum: (int) num {
+- (BOOL) dropTeamNum: (NSUInteger) num {
 	NSString *name = [self teamName: num];
 	
 	if (name)
@@ -358,7 +358,7 @@
 	return FALSE;
 }
 
-- (BOOL) renameTeam: (int) num to: (NSString *) newName {
+- (BOOL) renameTeam: (NSUInteger) num to: (NSString *) newName {
 	SetTeam *team = teamByNumber(num);
 	if (! teamNameExists(newName)) {
 		NSString *oldName = [self teamName: num];
@@ -377,11 +377,11 @@
 }
 
 
-- (int) pointsForEvent: (NSString *) eventId {
+- (NSInteger) pointsForEvent: (NSString *) eventId {
 	return eventValue(eventId);
 }
 
-- (void) setPoints: (int) points forEvent: (NSString *) eventId {
+- (void) setPoints: (NSInteger) points forEvent: (NSString *) eventId {
 	[eventPoints setObject: [NSNumber numberWithInt: points] forKey: eventId];
 }
 
@@ -396,12 +396,12 @@
 
 
 
-- (int) numberOfRowsInTableView: (NSTableView *) view {
+- (NSInteger) numberOfRowsInTableView: (NSTableView *) view {
 	return [teams count];
 }
 
-- (id) tableView: (NSTableView *) view objectValueForTableColumn: (NSTableColumn *) column row: (int) r {
-	int c = [[column identifier] intValue];
+- (NSString *) tableView: (NSTableView *) view objectValueForTableColumn: (NSTableColumn *) column row: (NSInteger) r {
+	NSInteger c = [[column identifier] intValue];
 	
 	switch (c) {
 		case 1:	// name
@@ -415,7 +415,7 @@
 	return nil;
 }
 
-- (void) tableView: (NSTableView *) view setObjectValue: (id) value forTableColumn: (NSTableColumn *) column row: (int) r {
+- (void) tableView: (NSTableView *) view setObjectValue: (id) value forTableColumn: (NSTableColumn *) column row: (NSInteger) r {
 	int c = [[column identifier] intValue];
 	
 	switch (c) {

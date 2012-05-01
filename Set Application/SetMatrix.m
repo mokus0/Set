@@ -144,7 +144,7 @@ static inline unsigned int cardCol(unsigned int num);
 }
 
 - (unsigned int) colsVisible {
-	[self getNumberOfRows: NULL columns: (signed int *)&colsVisible];
+	[self getNumberOfRows: NULL columns: (NSInteger *)&colsVisible];
 	
 	return colsVisible;
 }
@@ -280,7 +280,7 @@ static inline unsigned int cardCol(unsigned int num);
 - (void) removeSelection {
 	SetCardCell *cell;
 	
-	while (cell = [selection lastObject]) {
+	while ((cell = [selection lastObject])) {
 		[cell setCard: nil];
 	}
 	
@@ -529,9 +529,9 @@ static inline unsigned int cardCol(unsigned int num);
 	NSLog(@"colsVisible: %u", [self colsVisible]);
 	NSLog(@"displayColsNeeded: %u", [self displayColsNeeded]);
 	NSLog(@"mightBeSparse: %u", mightBeSparse);
-	NSLog(@"selection: <%u items>", [selection count]);
-	NSLog(@"sets in selection: %u", selSets);
-	NSLog(@"sets in field: %u", [fieldSets count]);
+	NSLog(@"selection: <%u items>", (unsigned) [selection count]);
+	NSLog(@"sets in selection: %u", (unsigned) selSets);
+	NSLog(@"sets in field: %u", (unsigned) [fieldSets count]);
 	NSLog(@"------------------------");
 
 	NSLog(@"selection = %@", [self selectedCards]);
@@ -550,7 +550,7 @@ static inline unsigned int cardCol(unsigned int num);
 	NSArray *sets = setsInCellArray(cells, SetMaxCards);
 	unsigned int numSets;
 	
-	if (numSets = [sets count]) {
+	if ((numSets = [sets count])) {
 		unsigned int setNum;
 		NSArray *set;
 		NSEnumerator *cardEnum;

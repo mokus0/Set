@@ -17,6 +17,7 @@
 
 - (void) dealloc {
     /* Do Nothing, Intentionally! */
+    if (0) [super dealloc];
 }
 
 - (oneway void) release {
@@ -31,7 +32,7 @@
     return self;
 }
 
-- (unsigned) retainCount {
+- (NSUInteger) retainCount {
     return 1;
 }
 

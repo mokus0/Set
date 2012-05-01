@@ -22,7 +22,7 @@
 	/* .-====== Local Prototypes ======-. */
 static inline unsigned int numElements(BOOL *array);
 static inline BOOL cardAllowed(SetCard *card, BOOL enabled[SetAttributeCount][SetCardsPerSet]);
-static signed int shuffleSort(id a, id b, int *r);
+static NSInteger shuffleSort(id a, id b, int *r);
 
 
 
@@ -225,7 +225,7 @@ static signed int shuffleSort(id a, id b, int *r);
 	NSArray *newDeck;
 	NSMutableArray *oldDeck = cards;
 	
-	newDeck = [cards sortedArrayUsingFunction: (int (*)(id, id, void *)) shuffleSort context: &shuffleCount];
+	newDeck = [cards sortedArrayUsingFunction: (NSInteger (*)(id, id, void *)) shuffleSort context: &shuffleCount];
 	
 	cards = [newDeck mutableCopy];
 	[oldDeck release];
@@ -296,13 +296,13 @@ static inline BOOL cardAllowed(SetCard *card, BOOL enabled[SetAttributeCount][Se
 	return TRUE;
 }
 
-static int shuffleSort(id a, id b, int *shuffleCount)
+static NSInteger shuffleSort(id a, id b, int *shuffleCount)
 {
 	dbRandomGenerator *rand = (dbRandomGenerator *) [dbRandomGenerator sharedInstance];
 	
 	if (*shuffleCount == 0)
 		return NSOrderedAscending;
-	*shuffleCount --;
+	*shuffleCount -= 1;
 	
 	if ([rand random] & 0x01)
         return NSOrderedAscending;

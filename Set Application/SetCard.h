@@ -28,7 +28,7 @@
 - (id) initWithShape: (SetShape) s color: (SetColor) c number: (SetNumber) n fill: (SetFill) f;
 
 - (BOOL) isEqual: (id) other;
-- (unsigned int) hash;
+- (NSUInteger) hash;
 - (SetCard *) copyWithZone: (NSZone *) zone;
 - (NSString *) description;
 

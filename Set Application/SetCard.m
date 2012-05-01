@@ -218,7 +218,7 @@ static void drawSquiggle(NSRect rect);
 	return FALSE;
 }
 
-- (unsigned int) hash {
+- (NSUInteger) hash {
 	return (
 			   shape
 			+ (color  << 8)

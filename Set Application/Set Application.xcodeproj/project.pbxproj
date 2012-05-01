@@ -329,7 +329,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = CE5F6F900B7B98640053A55C /* Build configuration list for PBXProject "Set" */;
+			buildConfigurationList = CE5F6F900B7B98640053A55C /* Build configuration list for PBXProject "Set Application" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -517,18 +517,24 @@
 		CE5F6F910B7B98640053A55C /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
 		CE5F6F920B7B98640053A55C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
 		CE5F6F930B7B98640053A55C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				SDKROOT = macosx;
 			};
 			name = Default;
 		};
@@ -545,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		CE5F6F900B7B98640053A55C /* Build configuration list for PBXProject "Set" */ = {
+		CE5F6F900B7B98640053A55C /* Build configuration list for PBXProject "Set Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE5F6F910B7B98640053A55C /* Development */,

@@ -10,7 +10,7 @@
 
 @class SetTeam;
 
-@interface SetScoreboard : NSView {
+@interface SetScoreboard : NSView <NSTableViewDataSource> {
 	
 		/* array of SetTeam objects in their "presentation order" */
 	NSMutableArray *teams;
@@ -41,16 +41,16 @@
 
 
 - (NSString *) teamName: (int) num;
-- (signed int) teamNumber: (NSString *) name;
+- (NSUInteger) teamNumber: (NSString *) name;
 
-- (void) score: (int) points forTeam: (NSString *) team;
-- (void) score: (int) points forTeamNum: (unsigned int) team;
+- (void) score: (NSInteger) points forTeam: (NSString *) team;
+- (void) score: (NSInteger) points forTeamNum: (NSUInteger) team;
 
 - (void) event: (NSString *) event forTeam: (NSString *) team;
-- (void) event: (NSString *) event forTeamNum: (unsigned int) team;
+- (void) event: (NSString *) event forTeamNum: (NSUInteger) team;
 
-- (int) scoreForTeam: (NSString *) team;
-- (int) scoreForTeamNum: (unsigned int) team;
+- (NSInteger) scoreForTeam: (NSString *) team;
+- (NSInteger) scoreForTeamNum: (NSUInteger) team;
 
 - (NSAttributedString *) scoreText;
 
@@ -58,7 +58,7 @@
 - (IBAction) resetScores: (id) sender;
 
 - (NSArray *) teams;
-- (unsigned int) numTeams;
+- (NSUInteger) numTeams;
 
 - (BOOL) addTeam;
 - (BOOL) addTeam: (NSString *) name;
@@ -67,12 +67,12 @@
 - (SetTeam *) newTeam: (NSString *) name withKeyEquivalent: (NSString *) key;
 
 - (BOOL) dropTeam: (NSString *) name;
-- (BOOL) dropTeamNum: (int) num;
-- (BOOL) renameTeam: (int) team to: (NSString *) name;
+- (BOOL) dropTeamNum: (NSUInteger) num;
+- (BOOL) renameTeam: (NSUInteger) team to: (NSString *) name;
 
 
-- (int) pointsForEvent: (NSString *) eventId;
-- (void) setPoints: (int) points forEvent: (NSString *) eventId;
+- (NSInteger) pointsForEvent: (NSString *) eventId;
+- (void) setPoints: (NSInteger) points forEvent: (NSString *) eventId;
 
 - (void) drawRect: (NSRect) rect;
 
